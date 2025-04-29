@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-images/1.1">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://www.sonce.org/</loc>
+        <lastmod>2024-04-29</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="sl" href="https://www.sonce.org/"/>
+    </url>
+
+    <!-- Main Services -->
+    <url>
+        <loc>https://www.sonce.org/brezplacna-pravna-pomoc</loc>
+        <lastmod>2024-04-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://www.sonce.org/images/pravna-pomoc.jpg</image:loc>
+            <image:title>Brezplačna pravna pomoč - Sindikat Sonce Koper</image:title>
+        </image:image>
+    </url>
+
+    <!-- Sections -->
+    <url>
+        <loc>https://www.sonce.org/pravno-svetovanje</loc>
+        <lastmod>2024-04-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.sonce.org/delovni-spori</loc>
+        <lastmod>2024-04-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.sonce.org/zastopanje-delavcev</loc>
+        <lastmod>2024-04-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Regional Pages -->
+    <url>
+        <loc>https://www.sonce.org/koper</loc>
+        <lastmod>2024-04-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.sonce.org/slovenija</loc>
+        <lastmod>2024-04-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Service Categories -->
+    <url>
+        <loc>https://www.sonce.org/strokovno-svetovanje</loc>
+        <lastmod>2024-04-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.sonce.org/zascita-pravic</loc>
+        <lastmod>2024-04-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Contact and About -->
+    <url>
+        <loc>https://www.sonce.org/kontakt</loc>
+        <lastmod>2024-04-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://www.sonce.org/o-nas</loc>
+        <lastmod>2024-04-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+</urlset> 

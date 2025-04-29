@@ -1,0 +1,70 @@
+# www.sonce.org robots.txt
+# Optimizirano za slovenske uporabnike in ključne besede
+
+# Primary keywords for SEO:
+# SONCE, Sindikat Sonce, Sonce Koper, PRAVNE, SONCE SLOVENIJE
+# Sindikat Sonce Koper, Brezplačna pravna pomoč, strokovno svetovanje
+
+# Allow all robots full access
+User-agent: *
+Allow: /
+Allow: /sitemap.xml
+Allow: /sitemap-sl.xml
+
+# Important content paths (based on keywords)
+Allow: /brezplacna-pravna-pomoc
+Allow: /pravno-svetovanje
+Allow: /strokovno-svetovanje
+Allow: /delovni-spori
+Allow: /zastopanje
+Allow: /koper
+Allow: /slovenija
+Allow: /zascita-pravic
+
+# Explicitly allow Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Explicitly allow Najdi.si (Slovenian search engine)
+User-agent: NajdiBot
+Allow: /
+Crawl-delay: 1
+
+# Allow Bing for Microsoft/Windows users
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Basic security
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all content variations for keywords
+Allow: /*?keyword=sonce
+Allow: /*?keyword=sindikat
+Allow: /*?keyword=pravna-pomoc
+Allow: /*?keyword=svetovanje
+Allow: /*?keyword=zastopanje
+Allow: /*?keyword=delovni-spori
+Allow: /*?lang=sl
+
+# Sitemaps
+Sitemap: https://www.sonce.org/sitemap.xml
+Sitemap: https://www.sonce.org/sitemap-sl.xml
+
+# Host preference - enforce www version
+Host: https://www.sonce.org
+
+# Regional and language targeting
+X-Robots-Tag: region=SI
+X-Robots-Tag: language=sl
+
+# Important sections for indexing (based on keywords)
+Allow: /pravna-pomoc/*
+Allow: /sindikat/*
+Allow: /svetovanje/*
+Allow: /zastopanje/*
+Allow: /delovni-spori/*
+Allow: /koper/*
+Allow: /slovenija/* 
