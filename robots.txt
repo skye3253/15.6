@@ -1,17 +1,32 @@
 # www.sonce.org robots.txt
 # Optimizirano za slovenske uporabnike in ključne besede
 
-# Primary keywords for SEO:
-# SONCE, Sindikat Sonce, Sonce Koper, PRAVNE, SONCE SLOVENIJE
-# Sindikat Sonce Koper, Brezplačna pravna pomoč, strokovno svetovanje
-
-# Allow all robots full access
 User-agent: *
 Allow: /
-Allow: /sitemap.xml
-Allow: /sitemap-sl.xml
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /*.sql$
+Disallow: /*.sql.gz$
+Disallow: /*.sql.bz2$
+Disallow: /*.inc$
+Disallow: /*.config$
+Disallow: /*.log$
+Disallow: /*.env$
+Disallow: /error_log$
+Disallow: /error.log$
+Disallow: /.git/
+Disallow: /.env
+Disallow: /.htaccess
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /node_modules/
 
-# Important content paths (based on keywords)
+# Allow specific content paths
 Allow: /brezplacna-pravna-pomoc
 Allow: /pravno-svetovanje
 Allow: /strokovno-svetovanje
@@ -20,51 +35,75 @@ Allow: /zastopanje
 Allow: /koper
 Allow: /slovenija
 Allow: /zascita-pravic
+Allow: /pristopna-izjava.pdf
+Allow: /prospekt-sindikata-sonce-slovenije.pdf
+Allow: /pogoji-uporabe.html
+Allow: /pravilnik-o-zasebnosti.html
+Allow: /pravilnik-o-piskotkih.html
+Allow: /mobile-warning.html
 
-# Explicitly allow Google
+# Googlebot specific rules
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
 
-# Explicitly allow Najdi.si (Slovenian search engine)
-User-agent: NajdiBot
-Allow: /
-Crawl-delay: 1
-
-# Allow Bing for Microsoft/Windows users
+# Bingbot specific rules
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-# Basic security
-Disallow: /admin/
-Disallow: /private/
+# Slovenian search engine - Najdi.si
+User-agent: NajdiBot
+Allow: /
+Crawl-delay: 1
 
-# Allow all content variations for keywords
-Allow: /*?keyword=sonce
-Allow: /*?keyword=sindikat
-Allow: /*?keyword=pravna-pomoc
-Allow: /*?keyword=svetovanje
-Allow: /*?keyword=zastopanje
-Allow: /*?keyword=delovni-spori
+# Block common bad bots
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 5
+
+User-agent: AhrefsBot
+Crawl-delay: 5
+
+# Media files indexing control
+User-agent: Googlebot-Image
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+Disallow: /admin/images/
+
+# Clean Parameters
+Allow: /*?keyword=*
 Allow: /*?lang=sl
+Disallow: /*?*print=
+Disallow: /*?*debug=
+Disallow: /*?*test=
 
 # Sitemaps
 Sitemap: https://www.sonce.org/sitemap.xml
 Sitemap: https://www.sonce.org/sitemap-sl.xml
 
-# Host preference - enforce www version
+# Host preference
 Host: https://www.sonce.org
 
 # Regional and language targeting
 X-Robots-Tag: region=SI
 X-Robots-Tag: language=sl
 
-# Important sections for indexing (based on keywords)
-Allow: /pravna-pomoc/*
-Allow: /sindikat/*
-Allow: /svetovanje/*
-Allow: /zastopanje/*
-Allow: /delovni-spori/*
-Allow: /koper/*
-Allow: /slovenija/* 
+# Cache control
+Cache-Control: max-age=3600 
